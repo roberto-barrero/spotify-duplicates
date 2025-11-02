@@ -3,7 +3,7 @@ from app import create_app
 import os
 
 # Get configuration from environment variable or use default
-config_name = os.environ.get('FLASK_ENV') or 'development'
+config_name = os.environ.get('FLASK_CONFIG') or 'development'
 app = create_app(config_name)
 
 if __name__ == '__main__':
